@@ -1,0 +1,66 @@
+<script type="text/javascript">
+
+
+  var usuario = {
+    nome: "Adalto",
+    sobrenome: "Picotti",
+    idade: 28
+  };
+
+
+  var usuario2 = new Object();
+  usuario2.nome = "Sat";
+  usuario2.sobrenome = "Sui";
+  usuario2.idade = 28;
+
+  var lista1 = [usuario, usuario2];
+
+  var lista2 = [
+    {
+      nome: "Adalto",
+      sobrenome: "Picotti",
+      idade: 28
+    },
+    {
+      nome: "Otavio",
+      sobrenome: "Picotti",
+      idade: 28
+    },
+    {
+      nome: "Caio",
+      sobrenome: "Sgorlon",
+      idade: 22
+    },
+  ]
+
+  console.log(lista1, lista2);
+
+  //document.write(lista2[1].nome, "<br>");
+  /*-
+  for(var i = 0; i < 3; i = i + 1){
+    document.write(lista2[i].nome, " ");
+    document.write(lista2[i].sobrenome, " - Idade: ");
+    document.write(lista2[i].idade, "<br>");
+  }
+
+  for(var i = 0; i < lista1.length; i++){
+    document.write(lista1[i].nome, " ");
+    document.write(lista1[i].sobrenome, " - Idade: ");
+    document.write(lista1[i].idade, "<br>");
+  }
+
+  for(let chave in lista2){
+    document.write(lista2[chave].nome, " ");
+    document.write(lista2[chave].sobrenome, " - Idade: ");
+    document.write(lista2[chave].idade, "<br>");
+  }
+  */
+
+
+  for(usuario of lista1){
+    document.write(usuario.nome, " ");
+    document.write(usuario.sobrenome, " - Idade: ");
+    document.write(usuario.idade, "<br>");
+  }
+
+</script>
