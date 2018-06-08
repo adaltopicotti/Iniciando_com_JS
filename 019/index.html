@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Título da Página</title>
+  </head>
+  <body>
+    <h2>Home</h2>
+    <div id="nomeUsuario" class="nome-usuario">
+
+    </div>
+    <div class="nome-usuario">
+
+    </div>
+
+    <script type="text/javascript">
+
+      let Nome = "Adalto";
+      document.getElementById('nomeUsuario').innerHTML = Nome;
+      let elementos = document.getElementsByClassName('nome-usuario');
+      console.log(elementos);
+
+      for(let item of elementos){
+        item.innerHTML = "Alice";
+      }
+
+    </script>
+  </body>
+</html>
