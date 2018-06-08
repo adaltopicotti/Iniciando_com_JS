@@ -1,12 +1,25 @@
 <script type="text/javascript">
 
-
+aulas = ["","",
+  "ola",
+  "variaveis",
+  "funcoes",
+  "pratica",
+  "pratica",
+  "matematica",
+  "array",
+  "objetos",
+  "lista",
+  "lista",
+  "laco_while",
+  "pratica"
+]
   document.write("<ul>");
-  for(var i = 0; i < 14; i++){
+  for(var i = 1; i <= 14; i++){
     if(i < 10){
       document.write("<li><a href='/00",i,"'>Aula 00",i,"</a></li>");
     } else {
-      document.write("<li><a href='/0",i,"'>Aula 0",i,"</a></li>");
+      document.write("<li><a href='./0",i,"/",aulas[i-1],".html' />Aula 0",i,"</a></li>");
     }
   }
   document.write("</ul>");
